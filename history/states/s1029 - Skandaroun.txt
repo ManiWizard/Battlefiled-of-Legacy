@@ -1,21 +1,25 @@
 state={
-	id=1017
-	name="Suweyda"
+	id=1029
+	name="Skandaroun"
+
 	history={
 		owner = SYR
 		victory_points = {
-			4486 3 
+			12029 3 
 		}
 		buildings = {
 			infrastructure = 1
 		}
 		add_core_of = SYR
+
 	}
+
 	provinces={
-		4486
+		12029
 	}
-	manpower=187500
+	manpower=700000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
+
 	local_supplies=2.0 
 }

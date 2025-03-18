@@ -1,0 +1,34 @@
+state={
+	id=1027
+	name="Aleppo"
+
+	history={
+		owner = SYR
+		victory_points = {
+			12473 12 
+		}
+		victory_points = {
+			6883 1 
+		}
+		victory_points = {
+			7671 1 
+		}
+		buildings = {
+			infrastructure = 4
+			7671 = {air_base = 2}
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = SYR
+
+	}
+
+	provinces={
+		6883 7671 12473 
+	}
+	manpower=2434000
+	buildings_max_level_factor=2.000
+	state_category=large_city
+
+	local_supplies=3.0 
+}

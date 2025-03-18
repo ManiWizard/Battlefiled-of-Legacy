@@ -1,0 +1,25 @@
+state={
+	id=1020
+	name="Homs"
+	history={
+		owner = SYR
+		victory_points = {
+			4550 9 
+		}
+		victory_points = {
+			7513 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SYR
+	}
+	provinces={
+		4550 7513 12442 10383 12316
+	}
+	manpower=901500
+	buildings_max_level_factor=1.500
+	state_category=city
+
+	local_supplies=2.5 
+}

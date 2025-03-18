@@ -1,23 +1,26 @@
 state={
-	id=1018
-	name="Raqqa"
+	id=1028
+	name="Deir-Ez-Zor"
 
 	history={
 		owner = SYR
 		victory_points = {
-			1606 6 
+			2013 3 
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+
 		}
 		add_core_of = SYR
+
 	}
+
 	provinces={
-		3942 1606
+		901 2013 12316
 	}
-	manpower=472000
-	buildings_max_level_factor=1.150
+	manpower=619500
+	buildings_max_level_factor=1.000
 	state_category=town
-	local_supplies=2.3 
+
+	local_supplies=2.0 
 }
