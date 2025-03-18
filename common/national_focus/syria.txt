@@ -45,14 +45,14 @@
 ###	}
 
 focus_tree = {
-	id = PER_FOCUS_TREE
+	id = SYR_FOCUS_TREE
 	
 	country = {
 		factor = 0
 		modifier = {
 			add = 100
-			tag = PER
-			original_tag = PER
+			tag = SYR
+			original_tag = SYR
 		} 
 	}
 
@@ -67,42 +67,21 @@ focus_tree = {
 
 
 	focus = { # Imperial
-		id = PER_Imperial
-		icon = GFX_PER_Imperial
-		cost = 10
-		x = 10
-		y = 0
-		completion_reward = { add_political_power = 75 }
-
-		mutually_exclusive = {
-			focus = PER_Imperial
-			focus = PER_End_of_Imperialism
-		}
-	}
-
-	focus = { # Imperial --> Pahlavi
-		id = PER_Pahlavi_Path
-		icon = GFX_PER_Pahlavi_Path
-		cost = 10
-		x = 10
-		y = 2
-		completion_reward = { }
-		prerequisite = {
-			focus = PER_Imperial
-		}
-	}
-
-	focus = { # Against Imperialism
-		id = PER_End_of_Imperialism
-		icon = GFX_PER_New_Era
+		id = Fuck_Shams_In_The_ASS
+		icon = 
 		cost = 10
 		x = 0
 		y = 0
-		completion_reward = { add_political_power = 75 }
-
-		mutually_exclusive = {
-			focus = PER_Imperial
-			focus = PER_End_of_Imperialism
+		completion_reward = { 
+			add_political_power = 75
+			annex_country = { target = IRQ}
+			annex_country = { target = SAU}
+			annex_country = { target = JOR}
+			annex_country = { target = PAL}
+			annex_country = { target = LEB}
+			annex_country = { target = YEM}
+			annex_country = { target = OMA}
+			annex_country = { target = KUW}
 		}
 	}
 
