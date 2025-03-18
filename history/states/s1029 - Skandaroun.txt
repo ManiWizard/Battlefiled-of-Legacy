@@ -1,24 +1,23 @@
 state={
-	id=1028
-	name="Deir-Ez-Zor"
+	id=1029
+	name="Skandaroun"
 
 	history={
 		owner = SYR
 		victory_points = {
-			2013 3 
+			12029 3 
 		}
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 1
 		}
 		add_core_of = SYR
 
 	}
 
 	provinces={
-		901 2013 12316
+		12029
 	}
-	manpower=619500
+	manpower=700000
 	buildings_max_level_factor=1.000
 	state_category=town
 

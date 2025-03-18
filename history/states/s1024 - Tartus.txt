@@ -4,15 +4,14 @@ state={
 
 	history={
 		owner = SYR
-		# victory_points = {
-		# 	12473 3 
-		# }
-		# victory_points = {
-		# 	1056 1 
-		# }
+		victory_points = {
+			10087 2
+		}
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 1
+			10087 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = SYR
 
@@ -21,9 +20,9 @@ state={
 	provinces={
 		10087
 	}
-	manpower=1325594
-	buildings_max_level_factor=1.000
-	state_category=town
+	manpower=398500
+	buildings_max_level_factor=1.200
+	state_category=rural
 
-	local_supplies=2.0 
+	local_supplies=2.1
 }
