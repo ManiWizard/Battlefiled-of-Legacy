@@ -1,6 +1,6 @@
 state={
-	id=1024
-	name="Tartus"
+	id=1027
+	name="Aleppo"
 
 	history={
 		owner = SYR
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		10087
+		6883 7671 12473 
 	}
 	manpower=1325594
 	buildings_max_level_factor=1.000

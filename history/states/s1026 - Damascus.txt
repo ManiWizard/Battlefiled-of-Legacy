@@ -1,11 +1,11 @@
 state={
-	id=1024
-	name="Tartus"
+	id=1026
+	name="Damascus"
 
 	history={
 		owner = SYR
 		# victory_points = {
-		# 	12473 3 
+		# 	12473 12 
 		# }
 		# victory_points = {
 		# 	1056 1 
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		10087
+		7184 4111
 	}
 	manpower=1325594
 	buildings_max_level_factor=1.000
