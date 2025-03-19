@@ -1,4 +1,4 @@
-l_english: 
+﻿l_english: 
  Aleppo:0 "Aleppo"
  Deir-Ez-Zor:0 "Deir-Ez-Zor"
  Suweyda:0 "As-Suweyda"
@@ -9,5 +9,6 @@ l_english:
  Latakia:0 "Latakia"
  Tartus:0 "Tartus"
  Hasakeh:0 "Hasakeh"
+ Damascus:0 "Damascus"
+ Idlib:0 "Idlib"
  Skandaroun:0 "Skandaroun"
- VICTORY_POINTS_7671:0 "Manbij"
