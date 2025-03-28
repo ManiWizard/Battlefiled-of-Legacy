@@ -1,0 +1,20 @@
+country_event = {
+    id = example.1
+    title = "example.1.t"
+    desc = "example.1.d"
+    picture = GFX_report_event_generic
+
+    trigger = {
+        has_government = democratic
+        date > 1939.1.1
+    }
+
+    option = {
+        name = "example.1.a"
+        add_political_power = 50
+    }
+    option = {
+        name = "example.1.b"
+        add_stability = -0.05
+    }
+}

@@ -1,0 +1,13 @@
+group {
+    id = "minimizable_menu_custom"
+    collapsible = yes  // This enables the minimization functionality.
+    // Define position, size, and other properties as needed.
+    
+    button {
+        id = "toggle_button_custom"
+        text = "▼"  // This icon indicates the menu can be minimized.
+        onClick = "toggle_minimization('minimizable_menu_custom')"
+    }
+    
+    // Add other UI elements for the menu here.
+}

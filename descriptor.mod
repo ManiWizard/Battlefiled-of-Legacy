@@ -11,4 +11,4 @@ tags={
 	"Sound"
 }
 name="Battlefield of Legacy"
-supported_version="1.16.1"
+supported_version="1.16.2"

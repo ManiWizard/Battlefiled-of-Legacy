@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		# Hijab shit
+		PER_hijab_banned = {
+			picture = ARG_growing_nationalism_modifier
+			modifier = {
+				stability_factor = -0.10
+				research_speed_factor = +0.075
+			}
+		}
+		PER_hijab_optional = {
+			picture = ARG_social_welfare_fund_ns
+			modifier = {
+				stability_factor = -0.05
+				research_speed_factor = +0.025
+			}
+		}
+		PER_hijab_mandatory = {
+			picture = ARG_monarchist_propaganda
+			modifier = {
+				stability_factor = +0.15
+				weekly_manpower = +1000
+				daily_support_for_unaligned = 0.05
+				political_power_factor = +0.10
+				consumer_goods_factor = -0.05
+				ideology_drift_defense = +0.20
+				add_popularity = f +1
+			}
+		}
+	}
+}

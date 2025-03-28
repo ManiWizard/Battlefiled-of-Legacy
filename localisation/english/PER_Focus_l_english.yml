@@ -1,0 +1,89 @@
+﻿l_english:
+  PER_initiate_early_efforts:0 "Initiate Early Efforts"
+  PER_initiate_early_efforts_desc:0 "Commence a rigorously planned program of industrial modernization and scientific inquiry to lay the foundation for our nation’s future progress."
+
+  # Branch I – Infrastructure (Transport)
+  PER_improve_transport_network:0 "Enhance Transport Network"
+  PER_improve_transport_network_desc:0 "Employ advanced engineering and logistical principles to revitalize our transportation framework, ensuring seamless movement of resources."
+  
+  PER_build_railway_infrastructure:0 "Construct Railway Infrastructure"
+  PER_build_railway_infrastructure_desc:0 "Erect an extensive railway network using modern technology to interlink urban centers with industrial zones, promoting economic integration."
+  
+  PER_construct_modern_rail_network:0 "Construct Modern Rail Network"
+  PER_construct_modern_rail_network_desc:0 "Adopt innovative railway designs and cutting-edge engineering methods to maximize efficiency and boost logistics."
+  
+  PER_construct_traditional_rail_network:0 "Construct Traditional Rail Network"
+  PER_construct_traditional_rail_network_desc:0 "Utilize time-honored engineering practices to build a reliable and durable railway system, ensuring steady, dependable service."
+  
+  PER_expand_road_network:0 "Expand Road Network"
+  PER_expand_road_network_desc:0 "Modernize and extend our road infrastructure to facilitate the swift transit of goods and personnel across the nation."
+  
+  PER_develop_port_facilities:0 "Develop Port Facilities"
+  PER_develop_port_facilities_desc:0 "Establish state-of-the-art port infrastructures to enhance maritime trade and resource exchange, driven by scientific innovation."
+
+  # Branch II – Civilian Factories (Preparations)
+  PER_prepare_civilian_factories:0 "Prepare Civilian Factories"
+  PER_prepare_civilian_factories_desc:0 "Lay the groundwork for domestic production by strategically planning and investing in factory infrastructure."
+  
+  PER_prioritize_heavy_industry:0 "Prioritize Heavy Industry"
+  PER_prioritize_heavy_industry_desc:0 "Focus scientific and technical resources on developing heavy industry, fostering large-scale production capabilities."
+  
+  PER_prioritize_light_industry:0 "Prioritize Light Industry"
+  PER_prioritize_light_industry_desc:0 "Channel efforts toward consumer-oriented production to stimulate economic growth with flexible manufacturing."
+  
+  PER_establish_industrial_policy:0 "Establish Industrial Policy"
+  PER_establish_industrial_policy_desc:0 "Formulate comprehensive, research-driven policies to govern industrial development and coordinate long-term growth."
+  
+  PER_upgrade_factory_efficiency:0 "Upgrade Factory Efficiency"
+  PER_upgrade_factory_efficiency_desc:0 "Implement technological upgrades and process optimizations to maximize production efficiency and reduce operational costs."
+  
+  PER_invest_in_automation:0 "Invest in Automation"
+  PER_invest_in_automation_desc:0 "Adopt advanced automated systems to streamline factory operations, reflecting the pinnacle of industrial innovation."
+
+  # Branch III – Education & Research
+  PER_open_universities:0 "Open Universities"
+  PER_open_universities_desc:0 "Establish premier centers of higher learning to cultivate scientific expertise and foster the next generation of technical innovators."
+  
+  PER_establish_research_institutes:0 "Establish Research Institutes"
+  PER_establish_research_institutes_desc:0 "Set up specialized institutes dedicated to technological research and industrial process optimization, driving breakthroughs across sectors."
+  
+  PER_promote_science_culture:0 "Promote Science Culture"
+  PER_promote_science_culture_desc:0 "Encourage an environment of academic inquiry and intellectual rigor, ensuring that scientific advancement remains at the heart of our progress."
+  
+  PER_invest_in_technology_transfer:0 "Invest in Technology Transfer"
+  PER_invest_in_technology_transfer_desc:0 "Facilitate the exchange of innovative technologies through international collaboration, integrating global advancements into our domestic framework."
+  
+  PER_create_research_centers:0 "Create Research Centers"
+  PER_create_research_centers_desc:0 "Develop dedicated research centers that continuously refine and enhance our technological capabilities, ensuring sustained industrial leadership."
+
+  # Branch IV – Resource Autonomy
+  PER_develop_resource_autonomy:0 "Develop Resource Autonomy"
+  PER_develop_resource_autonomy_desc:0 "Apply rigorous scientific analysis to reduce reliance on external resources, aiming for a self-sufficient and resilient resource base."
+  
+  PER_integrate_resource_processing:0 "Integrate Resource Processing"
+  PER_integrate_resource_processing_desc:0 "Consolidate our processing industries into a streamlined system to enhance efficiency and optimize output."
+  
+  PER_enhance_resource_export:0 "Enhance Resource Export"
+  PER_enhance_resource_export_desc:0 "Develop competitive export strategies backed by empirical research to boost revenue and strengthen international trade ties."
+  
+  PER_nationalize_key_resources:0 "Nationalize Key Resources"
+  PER_nationalize_key_resources_desc:0 "Assert state control over critical resources, applying scientific management to secure long-term stability and growth."
+  
+  PER_improve_resource_efficiency:0 "Improve Resource Efficiency"
+  PER_improve_resource_efficiency_desc:0 "Implement cutting-edge techniques to optimize the use of resources, reducing waste and increasing productivity."
+
+  # Branch V – Political & Economic Reforms
+  PER_reform_government:0 "Reform Government"
+  PER_reform_government_desc:0 "Modernize our political institutions with evidence-based policies that enhance transparency, efficiency, and rational governance."
+  
+  PER_strengthen_law_and_order:0 "Strengthen Law and Order"
+  PER_strengthen_law_and_order_desc:0 "Establish robust administrative systems and judicial reforms to maintain societal stability and ensure orderly progress."
+  
+  PER_promote_national_unity:0 "Promote National Unity"
+  PER_promote_national_unity_desc:0 "Cultivate a shared national identity and foster unity through policies informed by reason and empirical insight."
+  
+  PER_adopt_new_economic_policy:0 "Adopt New Economic Policy"
+  PER_adopt_new_economic_policy_desc:0 "Revise our economic framework using data-driven strategies to stimulate growth while ensuring balanced industrial development."
+  
+  PER_establish_national_strategy:0 "Establish National Strategy"
+  PER_establish_national_strategy_desc:0 "Develop a comprehensive long-term plan, grounded in scientific research and economic theory, to guide our nation’s future trajectory."

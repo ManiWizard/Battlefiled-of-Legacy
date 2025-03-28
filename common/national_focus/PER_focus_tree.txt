@@ -1,0 +1,385 @@
+focus_tree = {
+	id = PER_FOCUS_TREE
+	country = {
+		factor = 1
+		modifier = {
+			tag = PER
+			original_tag = PER
+			add = 20
+		}
+	}
+	# Set this tree as non-default if you have others.
+	default = no
+	reset_on_civilwar = no
+	initial_show_position = { x = 6 y = 0 }
+
+	shortcut = {
+		name = Industry
+		target = PER_initiate_early_efforts
+		scroll_wheel_factor = 1
+	}
+	
+	
+
+	#############################################
+	# Root Focus: Initiate 3-Year Early Efforts
+	#############################################
+	focus = {
+		id = PER_initiate_early_efforts
+		icon = GFX_goal_generic_industry
+		x = 0
+		y = 0
+		cost = 5
+		completion_reward = { add_political_power = 150 }
+		ai_will_do = { factor = 1 }
+	}
+
+	#############################################
+	# Branch I: Infrastructure (Transport)
+	#############################################
+	# 1.1: Improve Overall Transport Network
+	focus = {
+		id = PER_improve_transport_network
+		icon = GFX_goal_generic_railways
+		prerequisite = { focus = PER_initiate_early_efforts }
+		x = -5
+		y = 1
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+	# 1.2: Build Railway Infrastructure
+	focus = {
+		id = PER_build_railway_infrastructure
+		icon = GFX_goal_generic_railways
+		prerequisite = { focus = PER_improve_transport_network }
+		x = -6
+		y = 2
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+	# 1.3: Construct Modern Rail Network (mutually exclusive)
+	focus = {
+		id = PER_construct_modern_rail_network
+		icon = GFX_goal_generic_railroads
+		prerequisite = { focus = PER_build_railway_infrastructure }
+		mutually_exclusive = { focus = PER_construct_traditional_rail_network }
+		relative_position_id = PER_build_railway_infrastructure
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+	# 1.4: Construct Traditional Rail Network (mutually exclusive)
+	focus = {
+		id = PER_construct_traditional_rail_network
+		icon = GFX_goal_generic_railroads
+		prerequisite = { focus = PER_build_railway_infrastructure }
+		mutually_exclusive = { focus = PER_construct_modern_rail_network }
+		relative_position_id = PER_build_railway_infrastructure
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+	# 1.5: Expand Road Network
+	focus = {
+		id = PER_expand_road_network
+		icon = GFX_goal_generic_road_network
+		prerequisite = { focus = PER_improve_transport_network }
+		relative_position_id = PER_improve_transport_network
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+	# 1.6: Develop Port Facilities
+	focus = {
+		id = PER_develop_port_facilities
+		icon = GFX_goal_generic_port
+		prerequisite = { focus = PER_expand_road_network }
+		relative_position_id = PER_expand_road_network
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+
+	#############################################
+	# Branch II: Civilian Factories (Preparations)
+	#############################################
+	# 2.1: Prepare Civilian Factories
+	focus = {
+		id = PER_prepare_civilian_factories
+		icon = GFX_goal_generic_factory
+		prerequisite = { focus = PER_initiate_early_efforts }
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+	# 2.2: Prioritize Heavy Industry (mutually exclusive)
+	focus = {
+		id = PER_prioritize_heavy_industry
+		icon = GFX_goal_generic_industry
+		prerequisite = { focus = PER_prepare_civilian_factories }
+		mutually_exclusive = { focus = PER_prioritize_light_industry }
+		relative_position_id = PER_prepare_civilian_factories
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+	# 2.3: Prioritize Light Industry (mutually exclusive)
+	focus = {
+		id = PER_prioritize_light_industry
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = PER_prepare_civilian_factories }
+		mutually_exclusive = { focus = PER_prioritize_heavy_industry }
+		relative_position_id = PER_prepare_civilian_factories
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+	# 2.4: Establish Industrial Policy
+	focus = {
+		id = PER_establish_industrial_policy
+		icon = GFX_goal_generic_industry
+		prerequisite = { focus = PER_prioritize_heavy_industry }
+		relative_position_id = PER_prioritize_heavy_industry
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+	# 2.5: Upgrade Factory Efficiency
+	focus = {
+		id = PER_upgrade_factory_efficiency
+		icon = GFX_goal_generic_factory
+		prerequisite = { focus = PER_establish_industrial_policy }
+		relative_position_id = PER_establish_industrial_policy
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+	# 2.6: Invest in Automation
+	focus = {
+		id = PER_invest_in_automation
+		icon = GFX_goal_generic_industry
+		prerequisite = { focus = PER_upgrade_factory_efficiency }
+		relative_position_id = PER_upgrade_factory_efficiency
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+
+	#############################################
+	# Branch III: Education & Research
+	#############################################
+	# 3.1: Open Universities (adjusted so it appears below root)
+	focus = {
+		id = PER_open_universities
+		icon = GFX_goal_generic_education
+		prerequisite = { focus = PER_initiate_early_efforts }
+		x = 8
+		y = 1
+		cost = 5
+		# If "add_research_slots" is not recognized, use a hidden idea instead.
+		completion_reward = { add_research_slots = 1 }
+		ai_will_do = { factor = 1 }
+	}
+	# 3.2: Establish Research Institutes
+	focus = {
+		id = PER_establish_research_institutes
+		icon = GFX_goal_generic_science
+		prerequisite = { focus = PER_open_universities }
+		relative_position_id = PER_open_universities
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_research_bonus = 5 }
+		ai_will_do = { factor = 1 }
+	}
+	# 3.3: Promote Science Culture
+	focus = {
+		id = PER_promote_science_culture
+		icon = GFX_goal_generic_science
+		prerequisite = { focus = PER_establish_research_institutes }
+		relative_position_id = PER_establish_research_institutes
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+	# 3.4: Invest in Technology Transfer
+	focus = {
+		id = PER_invest_in_technology_transfer
+		icon = GFX_goal_generic_diplomacy
+		prerequisite = { focus = PER_establish_research_institutes }
+		relative_position_id = PER_establish_research_institutes
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+	# 3.5: Create Research Centers
+	focus = {
+		id = PER_create_research_centers
+		icon = GFX_goal_generic_science
+		prerequisite = { focus = PER_establish_research_institutes }
+		relative_position_id = PER_establish_research_institutes
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+
+	#############################################
+	# Branch IV: Resource Autonomy
+	#############################################
+	# 4.1: Develop Resource Autonomy (adjusted y to be lower than prerequisites)
+	focus = {
+		id = PER_develop_resource_autonomy
+		icon = GFX_goal_generic_resources
+		prerequisite = {
+			focus = PER_establish_industrial_policy
+			focus = PER_establish_research_institutes
+		}
+		x = 6
+		y = 4
+		cost = 5
+		completion_reward = { add_political_power = 100 }
+		ai_will_do = { factor = 1 }
+		
+	}
+	# 4.2: Integrate Resource Processing (mutually exclusive)
+	focus = {
+		id = PER_integrate_resource_processing
+		icon = GFX_goal_generic_resources
+		prerequisite = { focus = PER_develop_resource_autonomy }
+		mutually_exclusive = { focus = PER_enhance_resource_export }
+		relative_position_id = PER_develop_resource_autonomy
+		x = -1
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+	# 4.3: Enhance Resource Export (mutually exclusive)
+	focus = {
+		id = PER_enhance_resource_export
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = PER_develop_resource_autonomy }
+		mutually_exclusive = { focus = PER_integrate_resource_processing }
+		relative_position_id = PER_develop_resource_autonomy
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 75 }
+		ai_will_do = { factor = 1 }
+	}
+	# 4.4: Nationalize Key Resources
+	focus = {
+		id = PER_nationalize_key_resources
+		icon = GFX_goal_generic_resources
+		prerequisite = { focus = PER_develop_resource_autonomy }
+		relative_position_id = PER_develop_resource_autonomy
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+	# 4.5: Improve Resource Efficiency
+	focus = {
+		id = PER_improve_resource_efficiency
+		icon = GFX_goal_generic_resources
+		prerequisite = { focus = PER_nationalize_key_resources }
+		relative_position_id = PER_nationalize_key_resources
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+
+	#############################################
+	# Branch V: Political & Economic Reforms
+	#############################################
+	# 5.1: Reform Government
+	focus = {
+		id = PER_reform_government
+		icon = GFX_goal_generic_political
+		prerequisite = { focus = PER_initiate_early_efforts }
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 100 }
+		ai_will_do = { factor = 1 }
+	}
+	# 5.2: Strengthen Law and Order
+	focus = {
+		id = PER_strengthen_law_and_order
+		icon = GFX_goal_generic_order
+		prerequisite = { focus = PER_reform_government }
+		relative_position_id = PER_reform_government
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+	# 5.3: Promote National Unity
+	focus = {
+		id = PER_promote_national_unity
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PER_strengthen_law_and_order }
+		relative_position_id = PER_strengthen_law_and_order
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+	# 5.4: Adopt New Economic Policy
+	focus = {
+		id = PER_adopt_new_economic_policy
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = PER_promote_national_unity }
+		relative_position_id = PER_promote_national_unity
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_political_power = 50 }
+		ai_will_do = { factor = 1 }
+	}
+	# 5.5: Establish National Strategy
+	focus = {
+		id = PER_establish_national_strategy
+		icon = GFX_goal_generic_strategy
+		prerequisite = { focus = PER_adopt_new_economic_policy }
+		relative_position_id = PER_adopt_new_economic_policy
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { add_stability = 0.05 }
+		ai_will_do = { factor = 1 }
+	}
+}
