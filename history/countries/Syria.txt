@@ -1,0 +1,38 @@
+capital = 12473
+oob = "SYR_1936"
+set_cosmetic_tag = SYR_mandate
+set_politics = {
+	ruling_party = neutrality
+	last_election = 1936.1.1
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 80
+	democratic = 10
+	fascism = 5
+	communism = 5
+}
+
+set_stability = 0.75
+set_war_support = 0.65
+
+# add_ideas = {
+# 	syr_ibrahim_hananu_legacy
+# 	syr_great_syrian_revolt
+# 	syr_faisal_weizmann_agreement
+# 	syr_qabaday_generation
+# 	syr_hashim_al_atassi
+# }
+
+set_technology = {
+	infantry_equipment_1 = 1
+	support_equipment = 1
+	engineering_company = 1
+	recon_company = 1
+	construction1 = 1
+	electronic_mechanical_engineering = 1
+}
+
+set_research_slots = 4
