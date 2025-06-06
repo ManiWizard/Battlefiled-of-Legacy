@@ -4,4 +4,9 @@
 
  PER_hijab.1.a: "Ban the Hijab – We must modernize at all costs."
  PER_hijab.1.b: "Make Hijab Optional – Let the people choose."
- PER_hijab.1.c: "Mandate Hijab – Respect our heritage and tradition."
+PER_hijab.1.c: "Mandate Hijab – Respect our heritage and tradition."
+
+ example.1.t: "An Example Event"
+ example.1.d: "This is a sample event used for demonstration."
+ example.1.a: "Gain Political Power"
+ example.1.b: "Lose Stability"
