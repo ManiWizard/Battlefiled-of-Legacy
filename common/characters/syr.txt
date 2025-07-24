@@ -1,0 +1,8 @@
+SYR_khalil_kilani = {
+    name = "Khalil al-Kilani"
+    advisor_slot = political_advisor
+    idea_token = SYR_khalil_kilani_advisor
+    cost = 150
+}
+
+

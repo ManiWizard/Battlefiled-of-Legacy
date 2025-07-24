@@ -1,4 +1,12 @@
 ﻿l_english:
 #  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
-#  generic_focus:0 "National Focus"
-#  army_effort:0 "Army Effort"
+  syr_sowtheseedsofbravery:0 "Sow the Seeds of Bravery"
+  syr_sowtheseedsofbravery_desc:0 "Begin the process of establishing a strong and independent Syria, laying the groundwork for a nation that stands resilient and proud. There's just one tiny problem though... France."
+  syr_sowtheseedsofbravery_threat:0 "Syria challenges French colonial authority"
+  syr_awaken_the_sleeping_lion:0 "Awaken the Sleeping Lion"
+  syr_awaken_the_sleeping_lion_desc:0 "The Syrian people have long endured foreign domination, but beneath the silence lies a storm. Our poets, students, sheikhs, and soldiers are ready. We must now stir the lion — proud, watchful, and ready to roar."
+  syr_awaken_the_sleeping_lion_threat:0 "Syrian nationalist movements begin to organize" 
+  syr_forge_identity_of_a_nation:0 "Forge the Identity of a Nation"
+  syr_forge_identity_of_a_nation_desc:0 "Colonial powers rely on division. But our poets, teachers, and thinkers are reawakenin a shared Syrian consciousness — not merely of geography, but of spirit. Through art, language, and memory, we will forge the soul of a nation."
+  SYR_khalil_kilani:0 "Khalil al-Kilani"
+  SYR_khalil_kilani_advisor:0 "Philosopher and Patriot
