@@ -1,118 +1,118 @@
-focus_tree = {
-    id = syr_focus_tree
-    country = {
-      factor = 0
-      modifier = {
-        tag = SYR
-        original_tag = SYR
-        add = 20
-      }
-    }
-    default = no
-    reset_on_civilwar = no
-    initial_show_position = { x = 6 y = 0 }
-    continuous_focus_position = {
-        x = 53
-        y = 1080
-    }
-  focus = { #1st in independence
-      id = syr_sowtheseedsofbravery
-      icon = GFX_syr_focus_sowtheseedsofbravery
-      x = 0
-      y = 0
-      cost = 5
-      available = {
-          has_autonomy_state = autonomy_colony
-          is_subject = yes
-          overlord = FRA
-      }
-      cancel_if_invalid = yes
-      continue_if_invalid = no
-      completion_reward = {
-          add_political_power = 50
-          add_stability = 0.05
-          add_autonomy_ratio = 0.05
-          add_named_threat = {
-              threat = 2
-              name = syr_sowtheseedsofbravery_threat
-          }
-      }
-      ai_will_do = {
-          factor = 1
-      }
-      prerequisite = { }
-  }
-  focus = { #2nd in independence
-    id = syr_awaken_the_sleeping_lion
-    icon = GFX_goal_generic_political_reform
-    x = 0
-    y = 1
-    cost = 5
-    prerequisite = { focus = syr_sowtheseedsofbravery }
-    available = {
-        is_subject = yes
-        overlord = FRA
-    }
-    continue_if_invalid = yes
-    completion_reward = {
-        add_political_power = 75
-        add_stability = 0.05
-        add_autonomy_ratio = 0.1
-        add_manpower = 10000
-        add_named_threat = {
-            threat = 3
-            name = syr_awaken_the_sleeping_lion_threat
-        }
-        hidden_effect = {
-            set_country_flag = syr_awakened_nationalism
-        }
-    } 
-    ai_will_do = {
-        factor = 1
-    }
-  }
-  focus = {
-    id = syr_forge_identity_of_a_nation
-    icon = GFX_goal_generic_propaganda
-    x = 1
-    y = 2
-    cost = 10
-    prerequisite = { syr_awaken_the_sleeping_lion }
-    continue_if_invalid = yes
+# focus_tree = {
+#     id = syr_focus_tree
+#     country = {
+#       factor = 0
+#       modifier = {
+#         tag = SYR
+#         original_tag = SYR
+#         add = 20
+#       }
+#     }
+#     default = no
+#     reset_on_civilwar = no
+#     initial_show_position = { x = 6 y = 0 }
+#     continuous_focus_position = {
+#         x = 53
+#         y = 1080
+#     }
+#   focus = { #1st in independence
+#       id = syr_sowtheseedsofbravery
+#       icon = GFX_syr_focus_sowtheseedsofbravery
+#       x = 0
+#       y = 0
+#       cost = 5
+#       available = {
+#           has_autonomy_state = autonomy_colony
+#           is_subject = yes
+#           overlord = FRA
+#       }
+#       cancel_if_invalid = yes
+#       continue_if_invalid = no
+#       completion_reward = {
+#           add_political_power = 50
+#           add_stability = 0.05
+#           add_autonomy_ratio = 0.05
+#           add_named_threat = {
+#               threat = 2
+#               name = syr_sowtheseedsofbravery_threat
+#           }
+#       }
+#       ai_will_do = {
+#           factor = 1
+#       }
+#       prerequisite = { }
+#   }
+#   focus = { #2nd in independence
+#     id = syr_awaken_the_sleeping_lion
+#     icon = GFX_goal_generic_political_reform
+#     x = 0
+#     y = 1
+#     cost = 5
+#     prerequisite = { focus = syr_sowtheseedsofbravery }
+#     available = {
+#         is_subject = yes
+#         overlord = FRA
+#     }
+#     continue_if_invalid = yes
+#     completion_reward = {
+#         add_political_power = 75
+#         add_stability = 0.05
+#         add_autonomy_ratio = 0.1
+#         add_manpower = 10000
+#         add_named_threat = {
+#             threat = 3
+#             name = syr_awaken_the_sleeping_lion_threat
+#         }
+#         hidden_effect = {
+#             set_country_flag = syr_awakened_nationalism
+#         }
+#     } 
+#     ai_will_do = {
+#         factor = 1
+#     }
+#   }
+#   focus = {
+#     id = syr_forge_identity_of_a_nation
+#     icon = GFX_goal_generic_propaganda
+#     x = 1
+#     y = 2
+#     cost = 10
+#     prerequisite = { syr_awaken_the_sleeping_lion }
+#     continue_if_invalid = yes
 
-    completion_reward = {
-        add_political_power = 100
-        add_stability = 0.05
-        set_country_flag = syr_national_identity_forged
-        add_ideas = syr_awakening_identity_spirit
-    }
+#     completion_reward = {
+#         add_political_power = 100
+#         add_stability = 0.05
+#         set_country_flag = syr_national_identity_forged
+#         add_ideas = syr_awakening_identity_spirit
+#     }
 
-    ai_will_do = {
-        factor = 1
-    }
-}
-    id = syr_forge_identity_of_a_nation
-    icon = GFX_goal_generic_propaganda
-    x = 1
-    y = 2
-    cost = 10
-    prerequisite = { focus = syr_awaken_the_sleeping_lion }
-    continue_if_invalid = yes
+#     ai_will_do = {
+#         factor = 1
+#     }
+# }
+#     id = syr_forge_identity_of_a_nation
+#     icon = GFX_goal_generic_propaganda
+#     x = 1
+#     y = 2
+#     cost = 10
+#     prerequisite = { focus = syr_awaken_the_sleeping_lion }
+#     continue_if_invalid = yes
 
-    completion_reward = {
-        add_political_power = 100
-        add_stability = 0.05
-        set_country_flag = syr_forged_identity
-        add_ideas = syr_awakening_identity_spirit
-        hidden_effect = {
-            unlock_political_advisor = syr_philosopher_poet
-            unlock_political_advisor = syr_unionist_militant
-        }
-    }
+#     completion_reward = {
+#         add_political_power = 100
+#         add_stability = 0.05
+#         set_country_flag = syr_forged_identity
+#         add_ideas = syr_awakening_identity_spirit
+#         hidden_effect = {
+#             unlock_political_advisor = syr_philosopher_poet
+#             unlock_political_advisor = syr_unionist_militant
+#         }
+#     }
 
-    ai_will_do = {
-        factor = 1
-    }
-  }
+#     ai_will_do = {
+#         factor = 1
+#     }
+#   }
 
-}
+# }
