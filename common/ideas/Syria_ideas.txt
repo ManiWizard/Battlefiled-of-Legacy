@@ -1,23 +1,23 @@
-ideas = {
-	political_advisor = {
-		khalil_kilani = {
-		  id = SYR_khalil_kilani_advisor
-		  picture = GFX_portrait_generic_political_advisor
-		  cost = 150
+# ideas = {
+# 	political_advisor = {
+# 		khalil_kilani = {
+# 		  id = SYR_khalil_kilani_advisor
+# 		  picture = GFX_portrait_generic_political_advisor
+# 		  cost = 150
 	
-		  allowed = {
-			original_tag = SYR
-		  }
+# 		  allowed = {
+# 			original_tag = SYR
+# 		  }
 	
-		  available = {
-			has_country_flag = syr_forged_identity
-		  }
+# 		  available = {
+# 			has_country_flag = syr_forged_identity
+# 		  }
 	
-		  modifier = {
-			stability_factor = 0.1
-		  }
-		}
-	  }
+# 		  modifier = {
+# 			stability_factor = 0.1
+# 		  }
+# 		}
+# 	  }
 	
 
 	
@@ -237,5 +237,5 @@ ideas = {
 #             traits = { naval_manufacturer_convoy }
 #         }
 #     }
-}
+# }
 # // End of file

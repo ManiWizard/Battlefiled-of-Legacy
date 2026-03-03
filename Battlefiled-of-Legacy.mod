@@ -12,4 +12,4 @@ tags={
 }
 name="Battlefield of Legacy"
 supported_version="1.16.1"
-path="mod/Battlefiled-of-Legacy"
+path="C:/Users/S.A.M.MAX/Documents/Paradox Interactive/Hearts of Iron IV/mod/Battlefiled-of-Legacy"
