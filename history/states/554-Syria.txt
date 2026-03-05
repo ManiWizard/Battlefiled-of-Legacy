@@ -1,0 +1,27 @@
+state={
+	id=554
+	name="STATE_554"
+	state_category = metropolis
+	history={
+  		owner = SYR
+  		victory_points = {
+ 			4111 10 
+ 		}
+ 		victory_points = {
+ 			7184 5
+ 		}
+ 		buildings = {
+ 			infrastructure = 8
+ 			7184 = {air_base = 4}
+ 			arms_factory = 3
+ 			industrial_complex = 6
+ 		}
+ 		add_core_of = SYR
+	}
+	provinces={
+		4111 7184 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1
+	local_supplies=2
+}

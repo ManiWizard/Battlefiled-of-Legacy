@@ -1,24 +1,27 @@
 state={
-	id=1048
-	name="STATE_1048"
-	state_category = city
-	history={
+	id=680
+	name="STATE_680"
+	state_category = large_town
+		history={
   		owner = SYR
   		victory_points = {
- 			7140 5 
+ 			1578 2 
+ 		}
+ 		victory_points = {
+ 			1634 4 
  		}
  		buildings = {
- 			infrastructure = 4
+ 			infrastructure = 6
  			7671 = {air_base = 2}
  			arms_factory = 1
  			industrial_complex = 2
  		}
  		add_core_of = SYR
- 	}
-	provinces={
-		7140 
 	}
-	manpower=700000
+	provinces={
+		1578 1634 
+	}
+	manpower=600000
 	buildings_max_level_factor=1
-	local_supplies=0
+	local_supplies=4
 }

@@ -1,10 +1,24 @@
 state={
 	id=1054
 	name="STATE_1054"
+	state_category = rural
+	history={
+  		owner = SYR
+  		victory_points = {
+ 			7513 1 
+ 		}
+ 		buildings = {
+ 			infrastructure = 4
+ 			7671 = {air_base = 2}
+ 			arms_factory = 1
+ 			industrial_complex = 2
+ 		}
+ 		add_core_of = SYR
+ 	}
 	provinces={
 		7513 12316 
 	}
-	manpower=0
+	manpower=100000
 	buildings_max_level_factor=1
 	local_supplies=0
 }

@@ -1,10 +1,24 @@
 state={
 	id=1052
 	name="STATE_1052"
+	state_category = town
+	history={
+  		owner = SYR
+  		victory_points = {
+ 			4486 3 
+ 		}
+ 		buildings = {
+ 			infrastructure = 4
+ 			7671 = {air_base = 2}
+ 			arms_factory = 1
+ 			industrial_complex = 2
+ 		}
+ 		add_core_of = SYR
+ 	}
 	provinces={
 		4486 
 	}
-	manpower=0
+	manpower=450000
 	buildings_max_level_factor=1
 	local_supplies=0
 }

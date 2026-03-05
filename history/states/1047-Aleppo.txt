@@ -8,24 +8,23 @@ state={
  			12473 12 
  		}
  		victory_points = {
- 			6883 1 
+ 			6883 2 
  		}
  		victory_points = {
  			7671 1 
  		}
  		buildings = {
- 			infrastructure = 4
- 			7671 = {air_base = 2}
- 			arms_factory = 1
- 			industrial_complex = 2
+ 			infrastructure = 10
+ 			7671 = {air_base = 5}
+ 			arms_factory = 4
+ 			industrial_complex = 7
  		}
  		add_core_of = SYR
-
  	}
 	provinces={
 		6883 7671 12473 
 	}
-	manpower=2434000
+	manpower=2834000
 	buildings_max_level_factor=2
 	local_supplies=3.0
 }
